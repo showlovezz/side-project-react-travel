@@ -7,6 +7,7 @@ import {
   SideMenu,
   Carousel,
   ProductCollection,
+  BusinessPartners,
 } from './components'
 import styles from './App.module.css'
 import { productList1, productList2, productList3 } from './data/mockups'
@@ -54,6 +55,7 @@ const App: React.FC = () => {
           sideImage={sideImage3}
           products={productList3}
         />
+        <BusinessPartners />
       </div>
       <Footer />
     </div>
