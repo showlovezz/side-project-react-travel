@@ -1,5 +1,5 @@
 import HomePage from './HomePage'
+import RegisterPage from './RegisterPage'
+import SignInPage from './SignInPage'
 
-// export { Home }
-
-export default HomePage
+export { HomePage, RegisterPage, SignInPage }
