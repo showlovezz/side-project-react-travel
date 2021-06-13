@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import { HomePage, SignInPage, RegisterPage } from './pages'
+import { HomePage, SignInPage, RegisterPage, ProductDetailPage } from './pages'
 import styles from './App.module.css'
 
 const App: React.FC = () => {
@@ -12,6 +12,11 @@ const App: React.FC = () => {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/signIn' component={SignInPage} />
           <Route exact path='/register' component={RegisterPage} />
+          <Route
+            exact
+            path='/product_detail/:touristRouteId'
+            component={ProductDetailPage}
+          />
           <Route render={() => <h1>不存在的頁面</h1>} />
         </Switch>
       </BrowserRouter>
