@@ -3,16 +3,15 @@ import { Menu } from 'antd'
 import { GifOutlined } from '@ant-design/icons'
 
 import styles from './SideMenu.module.css'
-import { sideMenuList } from './mockup'
+import { sideMenuList } from './data/mockup'
 
 const SideMenu: React.FC = () => {
   return (
     <Menu mode='vertical' className={styles['side-menu']}>
-      {sideMenuList.map((menu, index) => {
+      {sideMenuList.map((menu) => {
         return (
           <Menu.SubMenu
-            // eslint-disable-next-line react/no-array-index-key
-            key={`side-menu-${index}`}
+            key={`side-menu-${menu.title}`}
             title={
               <span>
                 <GifOutlined style={{ marginRight: 10 }} />
@@ -20,11 +19,10 @@ const SideMenu: React.FC = () => {
               </span>
             }
           >
-            {menu.subMenu.map((subMenu, subIndex) => {
+            {menu.subMenu.map((subMenu) => {
               return (
                 <Menu.SubMenu
-                  // eslint-disable-next-line react/no-array-index-key
-                  key={`sub-menu-${subIndex}`}
+                  key={`sub-menu-${subMenu.title}`}
                   title={
                     <span>
                       <GifOutlined style={{ marginRight: 10 }} />
@@ -32,12 +30,9 @@ const SideMenu: React.FC = () => {
                     </span>
                   }
                 >
-                  {subMenu.subMenu.map((subSubMenu, subSubIndex) => {
+                  {subMenu.subMenu.map((subSubMenu) => {
                     return (
-                      <Menu.Item
-                        // eslint-disable-next-line react/no-array-index-key
-                        key={`sub-sub-menu-${subSubIndex}`}
-                      >
+                      <Menu.Item key={`sub-sub-menu-${subSubMenu}`}>
                         <span>
                           <GifOutlined style={{ marginRight: 10 }} />
                           {subSubMenu}

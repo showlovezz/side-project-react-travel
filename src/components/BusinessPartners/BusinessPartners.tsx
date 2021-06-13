@@ -22,9 +22,8 @@ const BusinessPartners: React.FC = () => {
         <Typography.Title level={3}>合作企業</Typography.Title>
       </Divider>
       <Row>
-        {companies.map((company, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <Col span={6} key={`business-partner-${index}`}>
+        {companies.map((company) => (
+          <Col span={6} key={`business-partner-${company.title}`}>
             <img
               alt='business-partner'
               src={company.src}

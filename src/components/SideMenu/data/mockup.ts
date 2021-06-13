@@ -3,11 +3,11 @@ export const sideMenuList = [
     title: '主题旅游',
     subMenu: [
       {
-        title: '爸妈游',
+        title: '爸媽游',
         subMenu: ['祈福拜佛', '古镇游玩', '桂林山水', '红色之旅'],
       },
       {
-        title: '亲子游',
+        title: '親子游',
         subMenu: ['上海迪士尼', '探险体验', '海洋公园', '感受名校'],
       },
       {
@@ -17,61 +17,61 @@ export const sideMenuList = [
     ],
   },
   {
-    title: '周边游',
+    title: '周邊游',
     subMenu: [
       {
         title: '周边目的地',
-        subMenu: ['杭州', '南京', '苏州', '黄山'],
+        subMenu: ['北京', '南京', '苏州', '黄山'],
       },
       {
-        title: '热门景点',
-        subMenu: ['普陀山', '千岛湖', '乌镇古镇', '宏村'],
+        title: '熱門景点',
+        subMenu: ['布達拉宮', '海螺溝', '乌镇古镇', '宏村'],
       },
     ],
   },
   {
-    title: '国内游',
+    title: '國內游',
     subMenu: [
       {
-        title: '广东',
-        subMenu: ['广州', '深圳', '珠海', '惠州'],
+        title: '廣東',
+        subMenu: ['廣州', '深圳', '珠海', '惠州'],
       },
       {
         title: '浙江',
         subMenu: ['杭州', '普陀山', '千岛湖', '宁波'],
       },
       {
-        title: '江苏',
+        title: '江蘇',
         subMenu: ['舟山', '乌镇', '干山', '湖州'],
       },
     ],
   },
   {
-    title: '东南亚',
+    title: '東南亞',
     subMenu: [
       {
-        title: '热门目的地',
+        title: '熱門目的地',
         subMenu: ['新加坡', '巴厘岛', '越南', '柬埔寨'],
       },
       {
-        title: '热门景点',
+        title: '東南亞熱門景點',
         subMenu: ['下龙湾', '吴哥窟', '西哈努克', '槟城珍珠岛'],
       },
     ],
   },
   {
-    title: '欧洲',
+    title: '歐洲',
     subMenu: [
       {
-        title: '热门邮轮航线',
+        title: '熱門郵輪航線',
         subMenu: ['欧洲河轮', '北欧邮轮', '爱琴海邮轮', '英伦三岛'],
       },
       {
-        title: '热门景点',
+        title: '歐洲熱門景點',
         subMenu: ['贝加尔湖', '普罗旺斯', '阿尔卑斯', '圣托里尼岛'],
       },
       {
-        title: '蜜月游',
+        title: '歐洲蜜月游',
         subMenu: ['极光中心', '俄罗斯远东地区', '英格兰少女峰', '玻璃海滩'],
       },
     ],
